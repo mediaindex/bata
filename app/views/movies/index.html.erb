@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+
+<section id="top_movies" class="clearfix">
+    <div class="wrapper">
+      <header class="clearfix">
+        <h2>Movies :</h2>
+        <p class="view_more">Voir Tous</p>
+      </header>
+
+      <div class="row clearfix">
+      <% @movies.each do |movie| %>
+        <div class="post">
+          <%= image_tag movie.image %>
+          <h3 class="title"><%= movie.title %> <%= movie.release_year %></h3>
+          <p class="post_info"><%= link_to "Learn more", movie_path(movie) %></p>
+          <p class="post_info"><%= link_to 'Show', movie %> | <%= link_to 'Edit', edit_movie_path(movie) %> | <%= link_to 'Destroy', movie, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+        </div>
+        <% end %>
+       </div>
+    </div>
+  </section>
+
+<br>
+
+<%= link_to 'New Actor', new_movie_path %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titre: MyString
+  synopsis: MyText
+  date_sortie: 2016-09-19
+  Producteur: MyString
+  note: MyString
+  casting: MyString
+  origine: MyString
+
+two:
+  titre: MyString
+  synopsis: MyText
+  date_sortie: 2016-09-19
+  Producteur: MyString
+  note: MyString
+  casting: MyString
+  origine: MyString

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+  <section id="banner" class="clearfix">
+    <div id="banner_content_wrapper">
+      <div id="poster">
+        <img src="../images/movies/the-martian.jpg" alt="Deadpool Movie Poster" class="featured_image">
+      </div>
+      <div id="content">
+        <h2 class="title"><%= @article.titre %></h2>
+        <p class="description"><%= @article.article %></p>
+     <%= link_to 'Edit', edit_article_path(@article) %> | <%= link_to 'Back', articles_path %>
+      </div>
+    </div>
+  </section>
+  </br>

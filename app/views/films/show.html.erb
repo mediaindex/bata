@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+  <section id="banner" class="clearfix">
+    <div id="banner_content_wrapper">
+      <div id="poster">
+        <img src="../images/movies/the-martian.jpg" alt="Deadpool Movie Poster" class="featured_image">
+        <img src="../images/play_button.png" alt="Play Trailer" class="play_button">
+      </div>
+      <div id="content">
+        <h2 class="title"><%= @film.titre %></h2>
+        <div class="ratings">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star inactive"></i>
+        </div>
+
+        <p class="description"><%= @film.synopsis %></p>
+
+        <p class="info"><%= @film.note %> <span>|</span> <%= @film.origine %> <span>|</span> <%= @film.Producteur %> <span>|</span><%= @film.date_sortie %><span>|</span><%= @film.casting %><span></p>
+        <%= link_to 'Edit', edit_film_path(@film) %> | <%= link_to 'Back', films_path %>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="top_movies" class="container clearfix">
+    <div class="wrapper">
+      <header class="clearfix">
+        <h2>Voir aussi :</h2>
+        <p class="view_more"><a href="#">View All Movies</a></p>
+      </header>
+
+      <div class="row clearfix">
+        <div class="post">
+          <img src="../images/movies/the-martian.jpg" alt="image <%= @film.titre %>">
+          <h3 class="title">The Martian</h3>
+        </div>
+        <div class="post">
+          <img src="../images/movies/avengers.jpg" alt="image <%= @film.titre %>">
+          <h3 class="title">Avengers</h3>
+        </div>
+        <div class="post">
+          <img src="../images/movies/inside-out.jpg" alt="image <%= @film.titre %>">
+          <h3 class="title">Inside-out</h3>
+        </div>
+        <div class="post">
+          <img src="../images/movies/jurassic-world.jpg" alt="image <%= @film.titre %>">
+          <h3 class="title">Jurassic-world</h3>
+        </div>
+
+       </div>
+    </div>
+  </section>
+

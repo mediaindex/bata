@@ -1,0 +1,23 @@
+
+<p id="notice"><%= notice %></p>
+  <section id="top_movies" class="clearfix">
+    <div class="wrapper">
+      <header class="clearfix">
+        <h2>Liste des Films</h2>
+      </header>
+
+      <div class="row clearfix">
+      <% @films.each do |film| %>
+        <div class="post">
+          <img src="images/movies/the-martian.jpg" alt="image <%= film.titre %>">
+          <h3 class="title"><%= film.titre %></h3>
+          <p class="post_info"><%= film.date_sortie %> | <%= film.origine %> | <%= film.note %></p>
+          <p class="post_info"><%= link_to 'Show', film %> | <%= link_to 'Edit', edit_film_path(film) %> | <%= link_to 'Destroy', film, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+        </div>
+        <% end %>
+       </div>
+    </div>
+  </section>
+
+<br>
+
