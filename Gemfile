@@ -28,7 +28,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rails_12factor', group: :production
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+gem 'mini_portile2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
